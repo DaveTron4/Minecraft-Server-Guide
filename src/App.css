@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,26 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 50%;
+  justify-self: center;
+  justify-content: left;
+}
+
+code {
+  background-color: black;
+  color: white;
+  padding: 0px 10px;
+}
+
+pre {
+  background-color: black;
 }
