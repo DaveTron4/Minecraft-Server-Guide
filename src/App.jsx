@@ -51,8 +51,8 @@ function App() {
           </ul>
           <h3 className='section-subtitle'>Steps</h3>
           <ol className='section-list'>
-            <li>Download Ubuntu Server ISO from <a href='https://ubuntu.com/download/server'>Ubuntu.com</a></li>
-            <li>If you don't have Balena Etcher, get it from <a href='https://etcher.balena.io/'>Balena Etcher</a>.</li>
+            <li>Download Ubuntu Server ISO from <a href='https://ubuntu.com/download/server' target="_blank">Ubuntu.com</a></li>
+            <li>If you don't have Balena Etcher, get it from <a href='https://etcher.balena.io/' target="_blank">Balena Etcher</a>.</li>
             <li>Make a bootable USB drive, connect USB drive to computer and run Balena Etcher. Select the flash drive and the Ubuntu server .iso. WARNING: 
             doing this will erase all files in the USB drive so make sure you don't have any important information in it.</li>
             <li>Make sure the laptop where you want to install Ubuntu Server is turned off, then connect flash drive to laptop.</li>
@@ -186,7 +186,7 @@ function App() {
           <h2 className='section-title'>Downloading and Installing Forge 1.18.2</h2>
           <ol className='section-list'>
             <li>
-              Download Forge <a href='https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.3.9/forge-1.18.2-40.3.9-installer.jar'>Forge Website</a>:
+              Download Forge <a href='https://files.minecraftforge.net/net/minecraftforge/forge/' target="_blank">Forge Website</a>:
               <pre><code>sudo wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.3.9/forge-1.18.2-40.3.9-installer.jar</code></pre>
               Notice: The link for the installation might be different depending on what version of Forge you want to install.
             </li>
@@ -211,7 +211,7 @@ function App() {
           <h2 className='section-title'>Adding Mods to the Server</h2>
           <ol className='section-list'>
             <li>
-              Download the mods you want to use on your server, make sure to download the same version as the Minecraft and Forge version you are using. Get mods at <a href='https://www.curseforge.com/minecraft'>CurseForge</a>.
+              Download the mods you want to use on your server, make sure to download the same version as the Minecraft and Forge version you are using. Get mods at <a href='https://www.curseforge.com/minecraft' target="_blank">CurseForge</a>.
             </li>
             <li>
               Transfer them to the server using WinSCP or SCP:<br />
@@ -299,7 +299,7 @@ function App() {
           <h3>Option 2: Using Playit.gg</h3>
           <ol className='section-list'>
             <li>
-              Download Playit.gg from <a href='https://playit.gg/download/linux'>here</a>:
+              Download Playit.gg from <a href='https://playit.gg/download/linux' target="_blank">here</a>:
               <pre><code>sudo wget https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64</code></pre>
             </li>
             <li>
@@ -371,9 +371,12 @@ function App() {
             </ol>
         </div>
       </div>
-      <div className='footer'>
-        <p>the copyright thing here</p>
-      </div>
+      <footer>
+        <p>&copy; 2025 David Salas C. All rights reserved.</p>
+      </footer>
+      <a href="#top" id="scrollToTop" class="scroll-to-top">
+        &#8593;
+      </a>
     </div>
   )
 }
