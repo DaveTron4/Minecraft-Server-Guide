@@ -80,14 +80,14 @@ function App() {
               Edit the file with your Wi-Fi name and password:
               <pre><code>
                 network:<br />
-                  version: 2<br />
-                  renderer: networkd<br />
-                  wifis:<br />
-                    wlan0: # Replace wlan0 with your actual Wi-Fi interface<br />
-                      dhcp4: yes<br />
-                      access-points:<br />
-                        "Your_WiFi_Name":<br />
-                          password: "Your_WiFi_Password"<br />
+                &nbsp;&nbsp;version: 2<br />
+                &nbsp;&nbsp;renderer: networkd<br />
+                &nbsp;&nbsp;wifis:<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;wlan0: # Replace wlan0 with your actual Wi-Fi interface<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dhcp4: yes<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;access-points:<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Your_WiFi_Name":<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: "Your_WiFi_Password"<br />
               </code></pre>
               Notice:
               <ul>
@@ -120,7 +120,7 @@ function App() {
               After installing OpenSSH you have to enable SSH with the following:
               <pre><code>
                 sudo systemctl enable ssh<br />
-                sudo systemctl start ssh
+                &nbsp;sudo systemctl start ssh
               </code></pre>
             </li>
             <li>
@@ -218,7 +218,7 @@ function App() {
               Using SCP:
               <pre><code>sudo scp modfile.jar user@server-ip:/opt/minecraft/mods/</code></pre>
               Note: I recommend using WinSCP because I personally found it quicker. The only thing was it didn't let me transfers files directly to the opt/ directory because I didn't have permission. What I did was transfer the files to <code>~/HomeDirectory</code> and then moved them using:
-              <pre><code>	sudo mv ~/mods/* /opt/minecraft/mods</code></pre>
+              <pre><code>sudo mv ~/mods/* /opt/minecraft/mods</code></pre>
               This way, I just transferred my mods folder to my home directory then moved all the mods inside that folder to the mods folder in the Minecraft server.<br />
               Notice: If, after the Forge installation and running the run.sh file, the mods folder wasn't created, create it with <code>sudo mkdir mods</code>
             </li>
@@ -349,8 +349,8 @@ function App() {
               List of commands to add, remove, and list all whitelisted users:
               <pre><code>
                 whitelist add FriendUsername<br />
-                whitelist remove FriendUsername<br />
-                whitelist list
+                &nbsp;whitelist remove FriendUsername<br />
+                &nbsp;whitelist list
               </code></pre>
             </li>
           </ol>

@@ -4,12 +4,23 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
 .main-container {
   width: 50%;
-  justify-self: center;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: left;
 }
 
+/* Code blocks */
 code {
   background-color: black;
   color: white;
@@ -18,13 +29,16 @@ code {
 
 pre {
   background-color: black;
+  overflow-x: auto;
 }
 
-
+/* Footer */
 footer {
   padding: 50px;
+  text-align: center;
 }
 
+/* Links */
 a {
   color: coral;
 }
@@ -33,28 +47,69 @@ a:visited {
   color: brown;
 }
 
+/* Scroll to top button */
 .scroll-to-top {
   position: fixed;
-  bottom: 20px; /* Position it 20px from the bottom */
-  right: 20px;  /* Position it 20px from the right */
-  width: 50px;  /* Width of the button */
-  height: 50px; /* Height of the button */
-  background-color: coral; /* Button background color */
-  color: white; /* Arrow color */
-  border-radius: 50%; /* Make it round */
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+  color: white;
+  border-radius: 50%;
   text-align: center;
-  font-size: 24px; /* Arrow size */
-  line-height: 50px; /* Vertically center the text */
-  text-decoration: none; /* Remove underline from the link */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for 3D effect */
+  font-size: 24px;
+  line-height: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+  transition: background-color 0.3s ease;
 }
 
 .scroll-to-top:hover {
-  background-color: brown; /* Darker blue on hover */
+  background-color: brown;
 }
 
 .scroll-to-top:visited {
   color: white;
+}
+
+/* ✅ Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .main-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  code {
+    font-size: 14px;
+  }
+
+  pre {
+    font-size: 14px;
+  }
 }
